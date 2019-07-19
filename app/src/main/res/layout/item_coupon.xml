@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/coupon_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/coupon_info"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:text="通用红包券"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@android:color/holo_red_light"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="20元"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@android:color/holo_orange_dark"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <View
+        android:divider="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/grab_coupon"
+        android:layout_width="100dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:tag="tag_grab_coupon"
+        android:text="抢券"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:background="@android:color/holo_orange_light"
+        android:layout_gravity="end"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"/>
+
+
+</LinearLayout>
