@@ -10,6 +10,10 @@ public class DateUtil {
         return getDate_yyyyMMdd("yyyy-MM-dd");
     }
 
+    public static String getDate_yyyyMMdd_HH_mm_ss(){
+        return getDate_yyyyMMdd("yyyy-MM-dd HH:mm:ss");
+    }
+
     private static String getDate_yyyyMMdd(String pattern){
         dateFormat = new SimpleDateFormat(pattern, Locale.CHINA);
         Date date = new Date();
