@@ -1,5 +1,6 @@
 package com.example.myscriptdemo.handler;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
@@ -12,9 +13,9 @@ import java.lang.ref.WeakReference;
 
 public class WeakReferenceHandler extends Handler {
 
-    private WeakReference<Context> weakReference;
-    public WeakReferenceHandler(Context context){
-        weakReference = new WeakReference<Context>(context);
+    private WeakReference<Activity> weakReference;
+    public WeakReferenceHandler(Activity activity){
+        weakReference = new WeakReference<Activity>(activity);
     }
 
     @Override
