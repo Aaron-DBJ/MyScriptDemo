@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.util.SparseArray;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -21,7 +22,10 @@ import com.example.myscriptdemo.R;
 import com.example.myscriptdemo.handler.WeakReferenceHandler;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity implements OnGrabCouponWithinItem {
     private static final String tag = "MainActivity";
@@ -30,7 +34,6 @@ public class MainActivity extends AppCompatActivity implements OnGrabCouponWithi
     private MyAdapter adapter;
     public TextView grabCoupon;
     private WeakReferenceHandler handler;
-
 
     private static final String[] COUPON_NAMES = {
             "通用红包券","清洁用品红包券","手机优惠券","酒水饮料红包券","个护清洁红包券","生鲜食品优惠券","3C数码红包券","家居用品红包券","坚果零食优惠券","衣服箱包红包券",
