@@ -1,7 +1,6 @@
 package com.example.myscriptdemo.handler;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
 import android.widget.Toast;

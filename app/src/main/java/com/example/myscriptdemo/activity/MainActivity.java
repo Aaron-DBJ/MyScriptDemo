@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity implements OnGrabCouponWithi
     public TextView grabCoupon;
     private WeakReferenceHandler handler;
 
-
     private static final String[] COUPON_NAMES = {
             "通用红包券","清洁用品红包券","手机优惠券","酒水饮料红包券","个护清洁红包券","生鲜食品优惠券","3C数码红包券","家居用品红包券","坚果零食优惠券","衣服箱包红包券",
     };
