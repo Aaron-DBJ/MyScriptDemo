@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
-import android.util.SparseArray;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -22,10 +21,7 @@ import com.example.myscriptdemo.R;
 import com.example.myscriptdemo.handler.WeakReferenceHandler;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity implements OnGrabCouponWithinItem {
     private static final String tag = "MainActivity";

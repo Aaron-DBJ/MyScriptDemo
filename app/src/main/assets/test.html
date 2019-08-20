@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>WebView Test</title>
+    <script type="text/javascript">
+        function callFromNative(content){
+            document.getElementById('showContent').innerHTML=content;
+        }
+		function btnShowToast(){
+		    window.TestJS.showToast("JSInterface调用Native");
+		}
+
+		function btnGoActivity(){
+		    window.TestJS.jump();
+		}
+	    </script>
+</head>
+<body>
+<p id="showContent">This is a website</p>
+<br>
+<a href="banma://cs/waybill">运单详情页</a><br>
+<button onclick='btnShowToast();'>show Toast</button>
+<button onclick='btnGoActivity();'>go Activity</button>
+</body>
+</html>
